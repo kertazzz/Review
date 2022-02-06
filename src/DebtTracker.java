@@ -24,18 +24,15 @@
 import java.util.Scanner;
 public class DebtTracker {
         final static int MONTH_PERCENT = 10;
+        final static int CREDIT_TERM_MONTHS = 3;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int amount = scanner.nextInt();
 
-        int amountLeft = 0;
-        for(int i = 0; i < 3; i++){
-            int monthPayment = (amount * MONTH_PERCENT / 100);
-            amount -= monthPayment;
-            amountLeft = amount;
-
+        for(int i = 0; i < CREDIT_TERM_MONTHS; i++){
+            amount = amount - (amount * MONTH_PERCENT / 100) ;
         }
 
-        System.out.println(amountLeft);
+        System.out.println(amount);
     }
 }
