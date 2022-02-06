@@ -20,9 +20,8 @@ public class Counter {
         int x = 1;
 
         while(x <= number){
-            int y = x % 3;
-            int z = x % 10;
-            if((y == 0)|| (z == 3)){
+            if(((x % 3) == 0) || ((x % 10) == 3))
+            {
                 System.out.println(x);
             }
             x++;
