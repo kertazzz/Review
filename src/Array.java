@@ -1,4 +1,5 @@
 
+import java.sql.SQLOutput;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Array {
@@ -33,6 +34,6 @@ public class Array {
             System.out.println("Количество 5 = " + countOf5);
             System.out.println("Max = " + max);
             System.out.println("Среднеарифметическое = " + mediumSum);
-
+            System.out.println("test");
         }
     }
