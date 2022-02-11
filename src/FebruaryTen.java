@@ -20,13 +20,12 @@ public class FebruaryTen {
         }
 
         for(int i = 0; i < list.size(); i++){
-            double d = (list.get(i) * 2);
-            list.set(i,d);
-            double g = list.get(i);
-            if (i % 2 == 0 && g % 2 != 0){
+            list.set(i,list.get(i) * 2);
+            if (i % 2 == 0 && list.get(i) % 2 != 0){
                 list.remove(i);
                 i--;
             }
         }
+        System.out.println(list);
     }
 }
